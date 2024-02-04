@@ -11,7 +11,6 @@ def get_triangle(rows: int) -> list[list[int]]:
     for i in range(1, rows):
         temp = [1] 
         for j in range(len(list_of_lists[i - 1]) - 1):
-            curr = list_of_lists[i - 1]
             temp.append(list_of_lists[i - 1][j] + list_of_lists[i - 1][j + 1])
         temp.append(1)
         list_of_lists.append(temp)
